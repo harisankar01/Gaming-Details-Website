@@ -1,14 +1,25 @@
-import react, { Component } from "react";
-import { Canvas } from "@react-three/fiber";
-import { MeshPhongMaterial } from "three";
-import { TorusGeometry } from "three";
-import { Mesh } from "three";
+import React from 'react';
+// Routing
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Components
+import Header from './components/Header';
+import Home from './components/Home';
+import Movie from './components/Movie';
+import NotFound from './components/NotFound';
 
-function App() {
-  return (
-      
-    <h1></h1>
-  )
-}
+// Styles
+import { GlobalStyle } from './GlobalStyles';
+
+const App = () => (
+  <Router>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/:movieId' element={<Movie />} />
+      <Route path='/*' element={<NotFound />} />
+    </Routes>
+    <GlobalStyle />
+  </Router>
+);
 
 export default App;
