@@ -1,9 +1,19 @@
-Hii this is still in development WebApp which fetches the data of games from the Rawg database using their api
-https://rawg.io/apidocs 
-This app is based on the repository (https://github.com/weibenfalk/react-rmdb-v3-starter-files) made by Weibenfalk
-Just clone the repo and run
-npm install and npm start and develope it further
+<h1>REACT APP</h1>
+    This is a application build using the react framework which fetches the game details from the api, and displayes it for user access to game details.
+<h1>DESCRIPTION</h1>
+      Clone the repository and run the command
+      <div style=" display:grid; width:40px; height:30px; background-color:lightgrey;">
+        <h2>NPM start</h2>
+      </div>
+      <h1>TOOLS USED</h1>
+      
+<blockquote> API: https://rawg.io/apidocs 
+        
+  
+  This app is based on the repository (https://github.com/weibenfalk/react-rmdb-v3-starter-files) made by Weibenfalk
+  <blockquote>  
 
 
+<footer>Link TO SITE:  https://sharp-saha-9c49cb.netlify.app</footer>
 
-Link TO SITE:  https://sharp-saha-9c49cb.netlify.app
+ 
