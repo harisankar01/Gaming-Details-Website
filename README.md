@@ -10,7 +10,7 @@
 <blockquote> API: https://rawg.io/apidocs 
         
   
-  This app is based on the repository (https://github.com/weibenfalk/react-rmdb-v3-starter-files) made by Weibenfalk
+  REFERENCE: (https://github.com/weibenfalk/react-rmdb-v3-starter-files) 
   <blockquote>  
 
 
