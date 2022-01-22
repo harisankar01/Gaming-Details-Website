@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { useParams } from 'react-router-dom';
-// Config
-import { IMAGE_BASE_URL, POSTER_SIZE } from '../config';
-// Components
 import BreadCrumb from './BreadCrumb';
 import Grid from './Grid';
 import Spinner from './Spinner';
 import MovieInfo from './MovieInfo';
 import MovieInfoBar from './MovieInfoBar';
 import Actor from './Actor';
-// Image
 import NoImage from '../images/no_image.jpg';
 import API from '../API';
 
@@ -27,10 +23,7 @@ class Movie extends Component {
       this.setState({ error: false, loading: true });
 
       const movie = await API.fetchMovie(movieId);
-      console.log(movie);
       const credits = await API.fetchCredits(movieId);
-      console.log(credits);
-      // Get directors only
       const directors = credits.ratings.filter(
         member => member.title==='exceptional'
       );

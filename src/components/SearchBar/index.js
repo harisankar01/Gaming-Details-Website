@@ -32,7 +32,7 @@ class SearchBar extends Component {
           <img src={searchIcon} alt='search-icon' />
           <input
             type='text'
-            placeholder='Search Movie'
+            placeholder='Search Games'
             onChange={event => this.setState({ value: event.currentTarget.value })}
             value={value}
           />

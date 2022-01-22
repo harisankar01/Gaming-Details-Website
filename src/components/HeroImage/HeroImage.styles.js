@@ -52,3 +52,8 @@ export const Text = styled.div`
     max-width: 100%;
   }
 `;
+export const Git=styled.img`
+  width:50px;
+  height:50px
+  position:relative;
+` 

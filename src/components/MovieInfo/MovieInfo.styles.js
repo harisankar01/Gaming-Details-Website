@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IMAGE_BASE_URL, BACKDROP_SIZE } from '../../config';
+
 
 export const Wrapper = styled.div`
   background: ${({ backdrop }) =>
@@ -41,12 +41,18 @@ export const Text = styled.div`
   }
   .score {
     display: flex;
+    flex-direction:column;
     align-items: center;
+    line-height:0;
     justify-content: center;
     width: 75px;
     height: 35px;
     font-weight: 800;
     margin: 0;
+    p{
+        text-decoration: none;
+    }
+    
   }
   .director {
     margin: 0 0 0 40px;

@@ -1,16 +1,11 @@
 import React, { Component ,useState} from 'react';
-// Config
-import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
-// Components
 import HeroImage from './HeroImage';
 import Grid from './Grid';
 import Thumb from './Thumb';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
 import Button from './Button';
-// Image
 import NoImage from '../images/no_image.jpg';
-// API
 import API from '../API';
 
 const initialState = {
@@ -44,14 +39,13 @@ class Home extends Component {
         },
         loading: false
       }));
-      console.log(this.state.page);
     } catch (error) {
       this.setState({ error: true, loading: false });
     }
   };
    fetchMovie = async (searchTerm ) => {
     try {
-      //  this.setState({ error: false, loading: true });
+       this.setState({ error: false, loading: true });
         const moviee = await API.fetchMo(searchTerm,this.state.page);
          this.setState({movie:{moviee},searchTerm:{searchTerm}})
     }catch(error){
@@ -83,7 +77,6 @@ class Home extends Component {
           <HeroImage
             image={movies.results[0].background_image}
             title={movies.results[0].name}
-            text={movies.results[0].reviews_text_count}
           />
         ) : null}
         <SearchBar setSearchTerm={this.handleSearch} />

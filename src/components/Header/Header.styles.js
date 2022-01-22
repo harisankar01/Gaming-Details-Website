@@ -27,3 +27,12 @@ export const TMDBLogoImg = styled.img`
     width: 80px;
   }
 `;
+export const Heading=styled.div`
+  color:0xDC9575;
+  borderRadius:2;
+  borderColor:0xDC9575;
+  font-size:29px;
+  color: red;
+  
+`
+

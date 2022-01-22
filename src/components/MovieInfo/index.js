@@ -1,12 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// Components
+import { Link } from 'react-router-dom';
 import Thumb from '../Thumb';
-// Config
-import { IMAGE_BASE_URL, POSTER_SIZE } from '../../config';
-// Image
 import NoImage from '../../images/no_image.jpg';
-// Styles
 import { Wrapper, Content, Text } from './MovieInfo.styles';
 
 const MovieInfo = ({ movie }) => (
@@ -30,7 +26,11 @@ const MovieInfo = ({ movie }) => (
             <h3>GENRE</h3>
             <div className='score'>
               {movie.genres.map(txt=>(
-                    <p key={txt.id}>{txt.name}</p>
+                <Link to={`/genre/${txt.name}`}  style={{ textDecoration: 'none' }}>
+                <div key={txt.id}>
+                    <p>{txt.name}</p>
+                  </div>
+                  </Link>
               ))
               }
             </div>
