@@ -20,7 +20,7 @@ npm run dev
   
 This is my first project on using the framework **React js** and it was a really intersting expereiance. Thanks to [weibenfalk](https://github.com/weibenfalk/react-rmdb-v3-starter-files) for his amazing tutorial on react js and great thanks to **[freecodecamp](https://www.youtube.com/watch?v=nTeuhbP7wdE&t=10623s)**.
 
-I have implemeted the code based on his tutorial(build a movie webite) to build a  **gaming website** using one of the gaming api.
+I have implemeted the code based on his tutorial(build a movie webite) to build a  **gaming website** using one of the gaming api from rapidapi.
 
 
 ## Site refernce 
