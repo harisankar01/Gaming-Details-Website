@@ -25,7 +25,7 @@ I have implemeted the code based on his tutorial(build a movie webite) to build 
 
 ## Site refernce 
 
- Link TO SITE:  https://sharp-saha-9c49cb.netlify.app</footer>
+ Link TO SITE: [gaming-heaven](https://sharp-saha-9c49cb.netlify.app)</footer>
  
  The **deployment** was done with with [netify](https://www.netlify.com/)
 
